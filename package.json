@@ -1,0 +1,11 @@
+{
+  "name": "share",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/adntin/share.git",
+  "author": "linbin <linbin@leedarson.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
