@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>渲染进程个数</title>
+  </head>
+  <body>
+    <h1>主页面</h1>
+    <iframe src="./text.html"></iframe>
+    <iframe src="http://127.0.0.1:8081/css3.html"></iframe>
+    <iframe src="https://www.arnoo.com/"></iframe>
+    <a href="./image.html" target="_blank" rel="opener">打开新Tab</a>
+    <button type="button" id="btn">打开新Tab</button>
+    <script>
+      window.onload = function () {
+        var btn = document.getElementById("btn");
+        btn.onclick = function () {
+          window.open("./image.html");
+          // window.opener.alert(1);
+          // https://html.spec.whatwg.org/multipage/links.html#link-type-opener
+        };
+      };
+    </script>
+  </body>
+</html>
