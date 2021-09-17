@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GC</title>
+    <script>
+      window.onload = function () {
+        var arr = new Array(100000);
+        console.log(arr);
+        setTimeout(function setTimeout1() {
+          var arr = new Array(100000);
+          console.log(arr);
+        }, 0);
+        var p = new Promise(function promise1(resolve, reject) {
+          var arr = new Array(100000);
+          console.log(arr);
+          var value = Math.random();
+          if (value > 0.5) {
+            resolve(value);
+          } else {
+            reject(value);
+          }
+        });
+        p.then(function then1(value) {
+          console.log(value);
+        }).catch(function catch1(value) {
+          console.log(value);
+        });
+      };
+    </script>
+  </head>
+  <body>
+    垃圾回收
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "fileheader.tpl": "/*\r\n * @Author: {author}\r\n * @Date: {createTime}\r\n * Copyright © Leedarson. All rights reserved.\r\n */\r\n",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.words": ["macrotask", "microtask", "microtasks", "worklet"]
+}
