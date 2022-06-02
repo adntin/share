@@ -8,5 +8,5 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.words": ["macrotask", "microtask", "microtasks", "worklet"]
+  "cSpell.words": ["macrotask", "microtask", "microtasks", "Wireshark", "worklet"]
 }
